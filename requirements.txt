@@ -1,0 +1,3 @@
+pydub
+openai-whisper
+numpy==1.22
