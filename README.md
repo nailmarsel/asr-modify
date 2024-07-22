@@ -5,7 +5,7 @@
 docker-compose build
 ```
 
-### Для запуска modify выполнить команду:
+### Для запуска modify нужно выполнить команду:
 ```
 docker-compose run audio-processing modify --volume 3 --speed 0.5
 docker-compose run audio-processing modify /app/audio_input/test_input_file.wav /app/audio_output/test_output_file.wav --speed 1.5 --volume 1.2
