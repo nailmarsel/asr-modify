@@ -4,7 +4,7 @@ import whisper
 
 def transcribe_audio(input_file, output_file):
     # Load Whisper model
-    model = whisper.load_model("large")
+    model = whisper.load_model("small")
 
     # Transcribe the audio file
     result = model.transcribe(input_file)

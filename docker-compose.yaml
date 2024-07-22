@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  audio-processing:
+    build: .
+    volumes:
+      - ./audio_input:/app/audio_input
+      - ./audio_output:/app/audio_output
+      - ./txt_output:/app/txt_output
+    entrypoint: ["python", "main.py"]
