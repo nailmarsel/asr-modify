@@ -23,6 +23,6 @@ docker-compose run audio-processing transcribe /app/audio_input/test_input_file.
 
 Возможна работа офлайн, но для этого нужно запустить хотя бы один раз с интернетом, чтобы модель Whisper скачалась. Я работал с Whisper Small. Модель можно поменять в файле download_model.py 
 ```
-model = whisper.load_model("ваша версия Whisper из списка ['tiny','base','small','medium','large'")
+model = whisper.load_model("ваша версия Whisper из списка ['tiny','base','small','medium','large']")
 ```
 Модель скачается один раз, далее будет использоваться скаченная версия. 
