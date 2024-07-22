@@ -1,21 +1,21 @@
 ## Консольное приложение на Python для работы с аудиофайлами формата WAV
 
-### Установка необходимых библиотек:
+### Сборка решения:
 ```
-pip install -r requirements.txt
+docker-compose build
 ```
 
 ### Для запуска modify выполнить команду:
 ```
-python main.py modify --volume 3 --speed 0.5
-python main.py modify audio_input/test_input_file.wav audio_output/test_output_file.wav --speed 1.5
+docker-compose run audio-processing modify --volume 3 --speed 0.5
+docker-compose run audio-processing modify /app/audio_input/test_input_file.wav /app/audio_output/test_output_file.wav --speed 1.5 --volume 1.2
 ```
 Если volume и speed не будут указаны, аудио останется неизменным. Установлены default значения для input_file и output_file (audio_input/test_input_file.wav и audio_output/test_output_file.wav).
 
 ### Для запуска transcribe выполнить команду:
 ```
-python main.py transcribe
-python main.py transcribe audio_input/record_out.wav txt_output/record_out.txt 
+docker-compose run audio-processing transcribe
+docker-compose run audio-processing transcribe /app/audio_input/test_input_file.wav /app/txt_output/test_output_file.txt
 ```
 Установлены default значения для input_file и output_file (audio_input/test_input_file.wav и txt_output/test_output_file.txt)
 
