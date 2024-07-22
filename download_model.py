@@ -2,7 +2,6 @@ import whisper
 import os
 import torch
 
-
 model = whisper.load_model("small")
 
 model_dir = "/app/models/whisper"
