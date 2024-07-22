@@ -20,3 +20,5 @@ python main.py transcribe audio_input/record_out.wav txt_output/record_out.txt
 Установлены default значения для input_file и output_file (audio_input/test_input_file.wav и txt_output/test_output_file.txt)
 
 В папке audio_input загружен аудиофайл с сайта и записанные мной аудио для распознавания.
+
+Возможна работа офлайн, но для этого нужно запустить хотя бы один раз с интернетом, чтобы модель Whisper скачалась
